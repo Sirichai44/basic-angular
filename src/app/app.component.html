@@ -24,3 +24,10 @@ style blinding
 two way binding
 <app-action-bar [step]="10" [(counter)]="appCounter" />
 <app-square-flex [divWidth]="appCounter" />
+<br />
+
+ngIf structural directive
+<button (click)="activate = !activate">Activate</button>
+<div *ngIf="activate">
+  <app-action-bar />
+</div>

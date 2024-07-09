@@ -3,11 +3,13 @@ import { RouterOutlet } from '@angular/router';
 import { MaxMinMeterComponent } from './max-min-meter/max-min-meter.component';
 import { SquareFlexComponent } from './square-flex/square-flex.component';
 import { ActionBarComponent } from './action-bar/action-bar.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
+    CommonModule,
     RouterOutlet,
     MaxMinMeterComponent,
     SquareFlexComponent,
@@ -37,4 +39,6 @@ export class AppComponent {
   }
 
   appCounter = 100;
+
+  activate: boolean = false;
 }
