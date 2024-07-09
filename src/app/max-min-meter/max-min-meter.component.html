@@ -1,0 +1,15 @@
+<div style="padding: 5px">
+  {{ minLabel }}:
+  <app-action-bar
+    [step]="5"
+    (numberChange)="doMinChange($event)"
+  ></app-action-bar>
+</div>
+
+<div style="padding: 5px">
+  {{ maxLabel }}:
+  <app-action-bar
+    [step]="10"
+    (numberChange)="doMaxChange($event)"
+  ></app-action-bar>
+</div>
