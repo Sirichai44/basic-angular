@@ -28,6 +28,11 @@ two way binding
 
 ngIf structural directive
 <button (click)="activate = !activate">Activate</button>
-<div *ngIf="activate">
+<div *ngIf="activate; else elseTemplate">
   <app-action-bar />
 </div>
+<br />
+
+<ng-template #elseTemplate>
+  <div>inactivate now</div>
+</ng-template>
