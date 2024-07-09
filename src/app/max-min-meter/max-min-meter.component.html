@@ -2,7 +2,7 @@
   {{ minLabel }}:
   <app-action-bar
     [step]="5"
-    (numberChange)="doMinChange($event)"
+    (counterChange)="doMinChange($event)"
   ></app-action-bar>
 </div>
 
@@ -10,6 +10,6 @@
   {{ maxLabel }}:
   <app-action-bar
     [step]="10"
-    (numberChange)="doMaxChange($event)"
+    (counterChange)="doMaxChange($event)"
   ></app-action-bar>
 </div>
