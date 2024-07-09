@@ -41,4 +41,12 @@ export class AppComponent {
   appCounter = 100;
 
   activate: boolean = false;
+
+  customerList: string[] = ['John', 'Doe', 'Jane', 'Doe'];
+  pushCustomer() {
+    this.customerList.push('customer' + this.customerList.length);
+  }
+  unShiftCustomer() {
+    this.customerList.unshift('customer' + this.customerList.length);
+  }
 }

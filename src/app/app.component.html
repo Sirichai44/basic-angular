@@ -36,3 +36,12 @@ ngIf structural directive
 <ng-template #elseTemplate>
   <div>inactivate now</div>
 </ng-template>
+
+<div>
+  array & ngFor structural directive
+  <button (click)="unShiftCustomer()">unshift</button>
+  <button (click)="pushCustomer()">push</button>
+  <ul>
+    <li *ngFor="let customer of customerList">{{ customer }}</li>
+  </ul>
+</div>
