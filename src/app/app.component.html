@@ -5,4 +5,14 @@
   (maxChange)="doAppMaxChange($event)"
 ></app-max-min-meter>
 
-<app-square-flex></app-square-flex>
+<app-square-flex
+  [divWidth]="squareWidth"
+  [divHeight]="squareHeight"
+></app-square-flex>
+
+<div>
+  Width:
+  <button type="button" (click)="doSquareWidthChange(100)">100</button>
+  <button type="button" (click)="doSquareWidthChange(200)">200</button>
+  <button type="button" (click)="doSquareWidthChange(300)">300</button>
+</div>
