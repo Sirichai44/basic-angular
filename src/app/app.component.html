@@ -1,10 +1,13 @@
+create components
 <app-max-min-meter
   [minLabel]="appMinLabel"
   [maxLabel]="appMaxLabel"
   (minChange)="doAppMinChange($event)"
   (maxChange)="doAppMaxChange($event)"
 ></app-max-min-meter>
+<br />
 
+style blinding
 <app-square-flex
   [divWidth]="squareWidth"
   [divHeight]="squareHeight"
@@ -16,3 +19,8 @@
   <button type="button" (click)="doSquareWidthChange(200)">200</button>
   <button type="button" (click)="doSquareWidthChange(300)">300</button>
 </div>
+<br />
+
+two way binding
+<app-action-bar [step]="10" [(counter)]="appCounter" />
+<app-square-flex [divWidth]="appCounter" />
